@@ -41,7 +41,7 @@ def actualiza():
         pass
     f = open(fichero, "wt")
     for i in dires:
-        f.write(i + "\r")
+        f.write(i + "\r\n")
     f.close()
 
 
@@ -49,7 +49,7 @@ def busca():
     try:
         f = open(fichero, "r").readlines()
     except:
-        return None
+        return None, 0
     encontrado = None
     lista = []
     repes = 0
