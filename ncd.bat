@@ -12,3 +12,4 @@ goto :eof
 echo vuelvo a escanear
 recorredir.py %1 %2
 goto :eof
+:FIN
